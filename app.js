@@ -1,18 +1,15 @@
-// app.js
+const express = require('express');
+const bodyParser = require('body-parser');
 
-const express = require('express')
-const app = express()
+const app = express();
+const port = 3000;
 
-// Define middleware
-app.use(express.json())
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
-// Define a route
-app.get('/', (req, res) => {
-  res.send('Hello, world!')
-})
+const routes = require('./routes/api');
+routes(app);
 
-// Start the server
-const PORT = process.env.PORT || 3000
-app.listen(PORT, () => {
-  console.log(`Server started on port ${PORT}`)
-})
+app.listen(port, () => {
+  console.log(`App listening on port ${port}!`);
+});
