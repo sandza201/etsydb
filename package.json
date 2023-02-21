@@ -6,7 +6,8 @@
   "scripts": {
     "test": "npm test",
     "start": "node app.js",
-    "dev": "nodemon app.js"
+    "dev": "nodemon app.js",
+    "create-model": "node make/newTable.js"
   },
   "repository": {
     "type": "git",
