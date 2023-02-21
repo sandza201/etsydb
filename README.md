@@ -1,4 +1,4 @@
-<h1 align="center">Welcome to nodeDb 👋</h1>
+<h1 align="center">Welcome to simpleNodeDB 👋</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
   <a href="#" target="_blank">
@@ -17,7 +17,7 @@ npm install
 ## Usage
 
 ```sh
-npm run make-model &#34;Model Name&#34;
+npm run make-model "Model Name";
 ```
 
 ## Run tests
